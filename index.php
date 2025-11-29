@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- Header -->
-  <?php include '../partials/header.php'; ?>
+  <?php include 'partials/header.php'; ?>
 
   <!-- Home Section -->
   <section id="home" class="hero">
