@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Nov 2025 pada 02.18
+-- Waktu pembuatan: 02 Des 2025 pada 09.00
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -205,7 +205,7 @@ INSERT INTO `sarana_prasarana` (`id`, `nama_sarana`, `file_foto`, `deskripsi`, `
 CREATE TABLE `user` (
   `username` varchar(12) NOT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `password` varchar(12) NOT NULL
+  `password` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -213,10 +213,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`username`, `email`, `password`) VALUES
-('admin', NULL, '123'),
 ('a', 'a@gmail.com', 'h'),
 ('septiawan', 'septiawanhadi38@gmail.com', '123456'),
-('admin1', 'admin1@gmail.com', '1234');
+('admin1', 'admin1@gmail.com', '$2y$10$J8SHrEpQgw1a5gRwNo265uJQRr1q0CSnavGYqJ5UWthgWDUESCM/.'),
+('[admin]', '[admin@gmail.com]', '[123]');
 
 --
 -- Indexes for dumped tables
