@@ -233,6 +233,15 @@ function getYouTubeEmbedUrl($url) {
             <?php endif; ?>
         </div>
     </div>
+    <div class="container my-5">
+        <div class="section-header">
+            <h2><i class="bi bi-play-circle-fill"></i> Galeri Instagram</h2>
+            <p class="text-muted">Dokumentasi yang ada di Instagram</p>
+        </div>
+
+        <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/1e3726d5a3885799ad3899811d57878c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        
+    </div>
     
     <?php include 'partials/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

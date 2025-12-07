@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 02 Des 2025 pada 09.00
--- Versi server: 10.4.32-MariaDB
--- Versi PHP: 8.2.12
+-- Generation Time: Dec 07, 2025 at 11:04 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `eskul`
+-- Table structure for table `eskul`
 --
 
 CREATE TABLE `eskul` (
@@ -36,20 +36,20 @@ CREATE TABLE `eskul` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `eskul`
+-- Dumping data for table `eskul`
 --
 
 INSERT INTO `eskul` (`id`, `nama_eskul`, `file_foto`, `deskripsi`, `created_at`) VALUES
-(6, 'Tennis Meja', '1764253871_692860afe44d4.jpg', 'lormeajshuahd', '2025-11-27 14:31:28'),
-(8, 'Angklung', '1764254947_692864e33fc8b.jpg', 'msc', '2025-11-27 14:49:07'),
-(9, 'Menggambar', '1764254985_69286509e72ab.jpg', 'jjhas', '2025-11-27 14:49:45'),
-(10, 'nasyid', '1764255011_69286523ea6a5.jpg', 'adf', '2025-11-27 14:50:11'),
-(11, 'Nyanyi', '1764255082_6928656a6bca2.jpg', 'kajdfj', '2025-11-27 14:51:22');
+(6, 'Tennis Meja', '1764253871_692860afe44d4.jpg', 'eskul tenis meja', '2025-12-07 09:53:14'),
+(8, 'Angklung', '1764254947_692864e33fc8b.jpg', 'eskul angklung', '2025-12-07 09:53:07'),
+(9, 'Menggambar', '1764254985_69286509e72ab.jpg', 'eskul menggambar', '2025-12-07 09:52:59'),
+(10, 'nasyid', '1764255011_69286523ea6a5.jpg', 'ada eskul nasyid', '2025-12-07 09:52:48'),
+(11, 'Nyanyi', '1764255082_6928656a6bca2.jpg', 'ada eskul bernyanyi', '2025-12-07 09:52:38');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `galeri_video`
+-- Table structure for table `galeri_video`
 --
 
 CREATE TABLE `galeri_video` (
@@ -63,7 +63,7 @@ CREATE TABLE `galeri_video` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data untuk tabel `galeri_video`
+-- Dumping data for table `galeri_video`
 --
 
 INSERT INTO `galeri_video` (`id`, `judul`, `deskripsi`, `youtube_url`, `created_at`, `updated_at`, `created_by`) VALUES
@@ -76,7 +76,7 @@ INSERT INTO `galeri_video` (`id`, `judul`, `deskripsi`, `youtube_url`, `created_
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kontak`
+-- Table structure for table `kontak`
 --
 
 CREATE TABLE `kontak` (
@@ -92,19 +92,20 @@ CREATE TABLE `kontak` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `kontak`
+-- Dumping data for table `kontak`
 --
 
 INSERT INTO `kontak` (`id`, `nama`, `email`, `pesan`, `status`, `tanggal_kirim`, `tanggal_dibaca`, `ip_address`, `user_agent`) VALUES
 (1, 'Mirza', 'septiawanhadi38@gmail.com', 'test', 'dibaca', '2025-11-13 04:31:52', '2025-11-14 01:09:29', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0'),
 (2, 'daniel', 'danielhs8@upi.edu', 'cape euy', 'dibalas', '2025-11-14 01:10:18', '2025-11-14 01:10:25', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0'),
 (3, 'daniel', 'danielhs8@upi.edu', 'cape euy', 'dibaca', '2025-11-14 01:11:55', '2025-11-14 01:45:54', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0'),
-(4, 'mirza', 'mirzaary6@gmail.com', 'halo', 'dibaca', '2025-11-14 03:56:45', '2025-11-15 07:31:46', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36');
+(4, 'mirza', 'mirzaary6@gmail.com', 'halo', 'dibaca', '2025-11-14 03:56:45', '2025-11-15 07:31:46', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'),
+(5, 'Mirza', 'Yonkkythebestboy@gmail.com', 'Butuh makan mang', 'dibaca', '2025-12-03 01:50:47', '2025-12-03 02:02:47', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pendidik`
+-- Table structure for table `pendidik`
 --
 
 CREATE TABLE `pendidik` (
@@ -117,17 +118,16 @@ CREATE TABLE `pendidik` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `pendidik`
+-- Dumping data for table `pendidik`
 --
 
 INSERT INTO `pendidik` (`id`, `nama`, `jabatan`, `deskripsi`, `foto`, `created_at`) VALUES
-(3, 'Mirza', 'Rektor', 'akdgkad', '1764292561_6928f7d11d736.jpeg', '2025-11-28 01:15:07'),
-(4, 'Daniel', 'Wakil Rektor', 'jkafh', '1764292615_6928f80751b62.jpeg', '2025-11-28 01:16:55');
+(4, 'Struktur Organisasi', 'Guru', 'Struktur Organisasi SLB Roza', '1765010350_6933ebaef21ee.jpg', '2025-11-28 01:16:55');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `photos`
+-- Table structure for table `photos`
 --
 
 CREATE TABLE `photos` (
@@ -139,19 +139,20 @@ CREATE TABLE `photos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `photos`
+-- Dumping data for table `photos`
 --
 
 INSERT INTO `photos` (`id`, `nama_foto`, `deskripsi`, `file_foto`, `created_at`) VALUES
-(19, 'Bioskop', 'kjjgad', '1764292057_6928f5d9d3245.jpg', '2025-11-28 00:59:54'),
-(20, 'Berenang', 'akjs', '1764291982_6928f58e04b4f.jpg', '2025-11-28 01:06:22'),
+(19, 'Bioskop', 'Siswa dan siswi sedang menonton film edukasi', '1764292057_6928f5d9d3245.jpg', '2025-11-28 00:59:54'),
+(20, 'Berenang', 'Siswa dan siswi sedang belajar berenang', '1764291982_6928f58e04b4f.jpg', '2025-11-28 01:06:22'),
 (21, 'Kereta Api', 'siswa dan siswi berkunjung ke stasiun kereta api', '1764292238_6928f68ec4ba4.jpg', '2025-11-28 01:10:38'),
-(22, 'bermain', 'siswa dan siswi sedang berlomba 17 agustusan', '1764292268_6928f6ace0dc9.jpg', '2025-11-28 01:11:08');
+(22, 'bermain', 'siswa dan siswi sedang berlomba 17 agustusan', '1764292268_6928f6ace0dc9.jpg', '2025-11-28 01:11:08'),
+(23, 'Buang Sampah', 'Melatih siswa dan siswi membuang sampah pada tempatnya', '1765101386_69354f4ae9980.jpg', '2025-12-07 09:56:26');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `profil`
+-- Table structure for table `profil`
 --
 
 CREATE TABLE `profil` (
@@ -162,7 +163,7 @@ CREATE TABLE `profil` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `profil`
+-- Dumping data for table `profil`
 --
 
 INSERT INTO `profil` (`id`, `bagian`, `isi`, `updated_at`) VALUES
@@ -173,7 +174,7 @@ INSERT INTO `profil` (`id`, `bagian`, `isi`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `sarana_prasarana`
+-- Table structure for table `sarana_prasarana`
 --
 
 CREATE TABLE `sarana_prasarana` (
@@ -185,21 +186,21 @@ CREATE TABLE `sarana_prasarana` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `sarana_prasarana`
+-- Dumping data for table `sarana_prasarana`
 --
 
 INSERT INTO `sarana_prasarana` (`id`, `nama_sarana`, `file_foto`, `deskripsi`, `created_at`) VALUES
-(14, 'Ruang Kelas', '1764254309_6928626545093.jpg', 'JAdaudguag', '2025-11-27 14:38:29'),
-(15, 'Ruang Guru', '1764254346_6928628a4aa3c.jpg', 'ajdhjadg', '2025-11-27 14:39:06'),
+(14, 'Ruang Kelas', '1764254309_6928626545093.jpg', 'Ruang belajar siswa dan siswi', '2025-12-07 09:51:06'),
+(15, 'Ruang Guru', '1764254346_6928628a4aa3c.jpg', 'Ruang guru untuk guru guru beristirahat', '2025-12-07 09:51:19'),
 (16, 'Toilet Atas', '1764254434_692862e25b00f.jpg', 'dilantai atas ada toilet dan dilengkapi wastafel', '2025-11-27 14:40:34'),
 (17, 'Toilet Bawah', '1764254469_69286305e8101.jpg', 'dilantai bawah ada 2 toilet siswa dan siswi', '2025-11-27 14:41:09'),
-(18, 'Ruang Kelas', '1764254575_6928636fb97da.jpg', 'ajksadj', '2025-11-27 14:42:55'),
-(19, 'Ruang Kepala Sekolah', '1764255381_69286695eb27f.jpg', 'kagfkaf', '2025-11-27 14:56:21');
+(18, 'Ruang Kelas', '1764254575_6928636fb97da.jpg', 'Ruang belajar siswa dan siswi', '2025-12-07 09:51:13'),
+(19, 'Ruang Kepala Sekolah', '1764255381_69286695eb27f.jpg', 'Ruang kepala sekolah', '2025-12-07 09:51:46');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -209,7 +210,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`username`, `email`, `password`) VALUES
@@ -223,13 +224,13 @@ INSERT INTO `user` (`username`, `email`, `password`) VALUES
 --
 
 --
--- Indeks untuk tabel `eskul`
+-- Indexes for table `eskul`
 --
 ALTER TABLE `eskul`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `galeri_video`
+-- Indexes for table `galeri_video`
 --
 ALTER TABLE `galeri_video`
   ADD PRIMARY KEY (`id`),
@@ -237,77 +238,77 @@ ALTER TABLE `galeri_video`
   ADD KEY `idx_created_by` (`created_by`);
 
 --
--- Indeks untuk tabel `kontak`
+-- Indexes for table `kontak`
 --
 ALTER TABLE `kontak`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `pendidik`
+-- Indexes for table `pendidik`
 --
 ALTER TABLE `pendidik`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `photos`
+-- Indexes for table `photos`
 --
 ALTER TABLE `photos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `profil`
+-- Indexes for table `profil`
 --
 ALTER TABLE `profil`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `sarana_prasarana`
+-- Indexes for table `sarana_prasarana`
 --
 ALTER TABLE `sarana_prasarana`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `eskul`
+-- AUTO_INCREMENT for table `eskul`
 --
 ALTER TABLE `eskul`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT untuk tabel `galeri_video`
+-- AUTO_INCREMENT for table `galeri_video`
 --
 ALTER TABLE `galeri_video`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT untuk tabel `kontak`
+-- AUTO_INCREMENT for table `kontak`
 --
 ALTER TABLE `kontak`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT untuk tabel `pendidik`
+-- AUTO_INCREMENT for table `pendidik`
 --
 ALTER TABLE `pendidik`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT untuk tabel `photos`
+-- AUTO_INCREMENT for table `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- AUTO_INCREMENT untuk tabel `profil`
+-- AUTO_INCREMENT for table `profil`
 --
 ALTER TABLE `profil`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT untuk tabel `sarana_prasarana`
+-- AUTO_INCREMENT for table `sarana_prasarana`
 --
 ALTER TABLE `sarana_prasarana`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
